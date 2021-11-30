@@ -1,13 +1,14 @@
-body {
-    margin: 0;
-}
-
 * {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    text-align: center;
+}
 
-/* Clear floats after the column */
+
+/* Clear floats after the columns */
 
 .row:after {
     content: "";
@@ -16,39 +17,43 @@ body {
 }
 
 
-/* Diseño de columna */
+/* Diseño de columnas */
 
-.column-1 {
-    /* contenido */
+.column1 {
     width: 100%;
     float: left;
+    background-color: aquamarine;
 }
 
-.column-2 {
-    /* contenido */
+.column2 {
     width: 50%;
     float: left;
+    background-color: lightpink;
 }
 
-.column-3 {
+.column3 {
     width: 33.33%;
     float: left;
+    background-color: lightskyblue;
 }
 
-.column-4 {
+.column4 {
     width: 25%;
     float: left;
+    background-color: lightyellow;
 }
 
 @media only screen and (max-width: 600px) {
-    /* reglas */
-    .column-3 {
+    /* REGLAS */
+    /* column3 pasará de tener 33.33% a 100% */
+    .column3 {
         width: 100%;
     }
-    .column-4 {
+    /* column4 pasará de tener 25% a 50% */
+    .column4 {
         width: 50%;
     }
-    #caja10 {
+    #full10 {
         width: 100%;
     }
 }
