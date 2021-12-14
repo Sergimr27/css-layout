@@ -7,53 +7,38 @@ body {
     text-align: center;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-
-/* Diseño de columnas */
-
-.column1 {
-    width: 100%;
-    float: left;
-    background-color: aquamarine;
-}
-
-.column2 {
+.column-1 {
     width: 50%;
     float: left;
-    background-color: lightpink;
+    background-color: red;
 }
 
-.column3 {
-    width: 33.33%;
-    float: left;
-    background-color: lightskyblue;
-}
-
-.column4 {
+.column-2 {
     width: 25%;
     float: left;
-    background-color: lightyellow;
+    background-color: blue;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+    background-color: yellow;
 }
 
 @media only screen and (max-width: 600px) {
-    /* REGLAS */
-    /* column3 pasará de tener 33.33% a 100% */
-    .column3 {
+    .column-1 {
         width: 100%;
     }
-    /* column4 pasará de tener 25% a 50% */
-    .column4 {
+    .column-2 {
         width: 50%;
     }
-    #full10 {
+    .column-3 {
         width: 100%;
     }
 }
